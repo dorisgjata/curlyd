@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { withStyles } from '@material-ui/core/styles';
+import logo from './logo.svg';
 
 class TopAppBar extends React.Component {
     render(){
@@ -15,8 +16,8 @@ class TopAppBar extends React.Component {
             <AppBar className={classes.toolbar} position="static">
             <Toolbar variant="dense">
             <IconButton  color="inherit" aria-label="menu"><MenuIcon/></IconButton>
-            <Typography color="inherit">
-                curlyD
+            <Typography >
+            <img color="inherit" src={logo} alt="curlyD"/>
             </Typography>
             </Toolbar>
             </AppBar>
