@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { withStyles } from '@material-ui/core/styles';
-import logo from './logo.svg';
+import logo from '../assests/logo.svg';
 
 class TopAppBar extends React.Component {
     render(){

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import TopAppbar from './TopAppbar';
+import TopAppbar from './components/TopAppbar';
 
 class App extends Component {
   render() {
