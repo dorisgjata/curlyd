@@ -9,35 +9,32 @@ import { withStyles } from '@material-ui/core/styles';
 import logo from '../assests/logo.svg';
 
 class TopAppBar extends React.Component {
-    render(){
-        const {classes}=this.props
-        return(
-            <div className={classes.root}>
-            <AppBar className={classes.toolbar} position="static">
-            <Toolbar variant="dense">
-            <IconButton  color="inherit" aria-label="menu"><MenuIcon/></IconButton>
-            <Typography >
-            <img color="inherit" src={logo} alt="curlyD"/>
-            </Typography>
-            </Toolbar>
-            </AppBar>
-
-            </div>
-        )
-    }
-
+	render() {
+		const { classes } = this.props;
+		return (
+			<div className={classes.root}>
+				<AppBar className={classes.toolbar} position="static">
+					<Toolbar variant="dense">
+						<IconButton aria-label="menu">
+							<MenuIcon />
+						</IconButton>
+						<div color="contrastText" className="typing">curlyD</div>
+					</Toolbar>
+				</AppBar>
+			</div>
+		);
+	}
 }
 
 TopAppBar.propTypes = {
-    classes: PropTypes.object.isRequired,
-  };
-  const styles = {
-    root: {
-      flexGrow: 1,
-    },
-    toolbar:{
-        backgroundColor: "#5C6BC0"
-    },
-    
-  };
-  export default withStyles(styles)(TopAppBar);
+	classes: PropTypes.object.isRequired
+};
+const styles = {
+	root: {
+		flexGrow: 1
+	},
+	toolbar: {
+		backgroundColor: 'primary'
+	}
+};
+export default withStyles(styles)(TopAppBar);
